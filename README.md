@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Item Monitor
+Can keep track of the quantity of an item you have
