@@ -1,4 +1,4 @@
-package com.example;
+package com.itemmonitor;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
@@ -15,5 +15,13 @@ public interface ExampleConfig extends Config
 	default String greeting()
 	{
 		return "Hello";
+	}
+
+	@ConfigItem(keyName = "itemIds",
+			name = "Item IDs",
+			description = "Enter the IDs to keep track of. Use commas to separate multiple items.")
+	default String itemIds()
+	{
+		return "563";
 	}
 }
